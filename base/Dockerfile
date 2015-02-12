@@ -6,4 +6,4 @@ RUN apt-get install --no-install-recommends -y -q build-essential libyaml-dev li
 
 RUN mkdir -p /usr/src && curl -L http://ftp.ruby-lang.org/pub/ruby/2.1/ruby-2.1.5.tar.bz2 | tar -C /usr/src -xj
 RUN cd /usr/src/ruby-2.1.5 && autoconf && ./configure --prefix=/usr --disable-install-doc && make && make install && make clean
-RUN gem install -q --no-rdoc --no-ri bundler --version 1.7.3
+RUN gem install -q --no-rdoc --no-ri bundler --version 1.8.0
