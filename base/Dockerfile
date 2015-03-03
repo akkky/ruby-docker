@@ -1,4 +1,4 @@
-FROM debian:wheezy
+FROM phusion/baseimage:latest
 MAINTAINER Ryosuke Akiyama <ryosuke.akiyama@broadleaf.co.jp>
 
 RUN apt-get update && apt-get upgrade -y -q
